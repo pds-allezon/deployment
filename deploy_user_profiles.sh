@@ -1,0 +1,1 @@
+./deploy.sh "user-profiles" "vm102"
