@@ -1,0 +1,6 @@
+user-tags=vm101
+user-profiles=vm102
+statistics=vm103
+lb=vm110
+kafka=vm109
+redis=vm108
