@@ -1,1 +1,0 @@
-./deploy.sh "statistics" "vm103"

@@ -1,1 +1,0 @@
-./deploy.sh "user-tags" "vm101"
