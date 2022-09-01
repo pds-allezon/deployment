@@ -1,0 +1,1 @@
+./build.sh "statistics" "vm103" "docker" "master"

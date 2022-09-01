@@ -6,6 +6,6 @@
 ./build.sh "ksqldb-configuration" "vm107" "docker-compose" "master"
 
 # Services
-./build.sh "user-tags" "vm101" "docker" "master"
-./build.sh "user-profiles" "vm102" "docker" "master"
-./build.sh "statistics" "vm103" "docker" "master"
+./build_user_tags.sh
+./build_user_profiles.sh
+./build_statistics.sh
