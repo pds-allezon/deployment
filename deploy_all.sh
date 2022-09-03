@@ -1,9 +1,9 @@
 ./deploy.sh "load-balancing-configuration" "vm110" "docker"
 
 # Databases
-./deploy_kafka
+./deploy_kafka.sh
 ./deploy.sh "redis-configuration" "vm108"  "docker"
-./deploy_ksqldb.sh
+./deploy.sh "mongo-configuration" "vm107" "docker-compose"
 
 # Services
 ./deploy.sh "user-tags" "vm101" "docker"

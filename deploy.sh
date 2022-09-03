@@ -6,7 +6,9 @@ echo ">>>>>>>>> Deploying $name on $vm with ${deploy_type}..."
 
 if [ ${deploy_type} = "docker" ]
 then
-  ssh st133@st133${vm}.rtb-lab.pl "cd code/${name} ; sudo docker run -d --network=host --privileged --name=${name} ${name};"
+  ssh st133@st133${vm}.rtb-lab.pl \
+    "sudo docker run -d --network=host --privileged --name=${name} ${name};" \
+    "sudo docker restart ${name};"
 else
   ssh st133@st133${vm}.rtb-lab.pl "cd code/${name} ; sudo docker-compose up -d"
 fi

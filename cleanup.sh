@@ -4,7 +4,7 @@ echo ">>>>>>>>> Cleaning up $vm..."
 
 echo "Destroying docker containers in $vm"
 ssh "st133@st133${vm}.rtb-lab.pl" \
-  "sudo docker rm --force \$(sudo docker ps -q) ;" \
+  "sudo docker rm --force \$(sudo docker ps -a -q) ;" \
   "sudo docker volume rm \$(sudo docker volume ls -q) ;" \
   "echo 'Removing code in $vm' ;" \
   "rm -rf code ;" \
