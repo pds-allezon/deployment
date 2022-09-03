@@ -11,4 +11,5 @@ ssh "st133@st133${vm}.rtb-lab.pl" \
   "echo 'Removing remaining directories in $vm' ;" \
   "sudo rm -rf /vol1/zk-data/* ;" \
   "sudo rm -rf /vol2/zk-txn-logs/* ;" \
-  "sudo rm -rf /vol3/kafka-data/* ;"
+  "sudo rm -rf /vol3/kafka-data/* ;" \
+  "sudo rm -rf /vol4/mongo-data/* ;"
