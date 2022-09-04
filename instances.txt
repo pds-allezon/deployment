@@ -3,5 +3,6 @@ user-profiles=vm102
 statistics=vm103
 mongo=vm107
 redis=vm108
+redis=vm106
 kafka=vm109
 lb=vm110

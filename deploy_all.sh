@@ -3,6 +3,7 @@
 # Databases
 ./deploy_kafka.sh
 ./deploy.sh "redis-configuration" "vm108"  "docker"
+./deploy.sh "redis-configuration" "vm106"  "docker"
 ./deploy_mongo.sh
 
 # Services
